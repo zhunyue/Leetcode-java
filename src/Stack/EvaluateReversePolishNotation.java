@@ -1,5 +1,6 @@
 package Stack;
 
+
 import java.util.Stack;
 
 /*
@@ -21,19 +22,18 @@ import java.util.Stack;
 public class EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
         Stack<String> record = new Stack<>();
-        for(String str : tokens){
-            if(isNumber(str)){
+        for (String str : tokens) {
+            if (isNumber(str)) {
                 int num = Integer.parseInt(str);
                 record.push(str);
-            }
-            else{
+            } else {
                 int num2 = Integer.parseInt(record.pop());
                 int num1 = Integer.parseInt(record.pop());
-                if(str.equals("+"))
+                if (str.equals("+"))
                     record.push(String.valueOf(num1 + num2));
-                else if(str.equals("-"))
+                else if (str.equals("-"))
                     record.push(String.valueOf(num1 - num2));
-                else if(str.equals("*"))
+                else if (str.equals("*"))
                     record.push(String.valueOf(num1 * num2));
                 else
                     record.push(String.valueOf(num1 / num2));
@@ -42,11 +42,10 @@ public class EvaluateReversePolishNotation {
         return Integer.parseInt(record.pop());
     }
 
-    private boolean isNumber(String str){
-        if(str.equals("+") || str.equals("-") || str.equals("*") || str.equals("/")){
+    private boolean isNumber(String str) {
+        if (str.equals("+") || str.equals("-") || str.equals("*") || str.equals("/")) {
             return false;
         }
         return true;
     }
-
 }
