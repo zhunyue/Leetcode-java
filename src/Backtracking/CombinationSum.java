@@ -25,7 +25,7 @@ import java.util.List;
 
 public class CombinationSum {
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
-        Arrays.sort(candidates);
+        Arrays.sort(candidates); //sort the array so that if the current number is greater than target, we could stop calculating
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> cur = new ArrayList<>();
         helper(candidates, target, 0, res, cur);
