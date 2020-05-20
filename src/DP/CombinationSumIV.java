@@ -26,7 +26,7 @@ import java.util.Arrays;
 public class CombinationSumIV {
     public int combinationSum4(int[] nums, int target) {
         int[] dp = new int[target+1];
-        Arrarys.fill(dp, -1);
+        Arrays.fill(dp, -1);
         dp[0] = 1;
         return helper(nums, target, dp);
     }
