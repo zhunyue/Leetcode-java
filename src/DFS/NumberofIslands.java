@@ -53,20 +53,17 @@ public class NumberofIslands {
         helper(i,j+1,grid);
     }
 
-    //Solution2: BFS to traverse neighbors which are not visited of every "1" 
-    boolean visited[][];
-    public static final int[][] DIRC = new int[][]{ {1,0}, {-1,0}, {0,-1}, {0,1}};
+    //Solution2: BFS to traverse neighbors which are not visited of every "1"
     public int numIslands2(char[][] grid) {
         int m = grid.length;
-        if(m == 0)
-            return 0;
+        if(m <= 0) return 0;
         int n = grid[0].length;
         int total = 0;
-        visited = new boolean[m][n];
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                if(!visited[i][j]&&grid[i][j] == '1'){
-                    BFS(i,j,grid);
+                if(grid[i][j] == '1'){
+                    System.out.println("************" + i + ", "+j);
+                    helper(grid, i, j);
                     total++;
                 }
             }
@@ -74,26 +71,39 @@ public class NumberofIslands {
         return total;
     }
 
-    public void BFS(int i, int j, char[][] grid) {
+    public boolean isValid(char[][] grid, int nX, int nY){
         int m = grid.length;
         int n = grid[0].length;
+        if(nX<0||nX>=m||nY<0||nY>=n) return false;
+        return true;
+    }
+    public void helper(char[][] grid, int i, int j){
+        if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0')
+            return;
         Queue<List<Integer>> q = new LinkedList<>();
         q.add(new ArrayList<>(Arrays.asList(i,j)));
-        visited[i][j] = true;
-
+        grid[i][j] = '0';
         while(q.size() > 0){
             List<Integer> l = q.poll();
-            int x = l.get(0);
-            int y = l.get(1);
-            for(int[] dirc :DIRC){
-                int nX = x + dirc[0];
-                int nY = y + dirc[1];
-                if(nX<0||nX>=m||nY<0||nY>=n||visited[nX][nY]||grid[nX][nY]=='0') continue;
-                visited[nX][nY]=true;
-                q.add(new ArrayList<>(Arrays.asList(nX,nY)));
+            i = l.get(0);
+            j = l.get(1);
+            System.out.println(i + ", "+j);
+            if(isValid(grid, i-1, j) && grid[i-1][j] == '1'){
+                grid[i-1][j] = '0';
+                q.add(new ArrayList<>(Arrays.asList(i-1,j)));
             }
-
+            if(isValid(grid, i+1, j) && grid[i+1][j] == '1'){
+                grid[i+1][j] = '0';
+                q.add(new ArrayList<>(Arrays.asList(i+1,j)));
+            }
+            if(isValid(grid, i, j-1) && grid[i][j-1] == '1'){
+                grid[i][j-1] = '0';
+                q.add(new ArrayList<>(Arrays.asList(i,j-1)));
+            }
+            if(isValid(grid, i, j+1) && grid[i][j+1] == '1'){
+                grid[i][j+1] = '0';
+                q.add(new ArrayList<>(Arrays.asList(i,j+1)));
+            }
         }
-
     }
 }
