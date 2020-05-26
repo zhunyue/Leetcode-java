@@ -1,9 +1,6 @@
 package HashMap;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
     Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
@@ -137,5 +134,75 @@ public class LRUCache {
             map.put(key, insert);
             moveToTail(insert);
         }
+    }
+
+    // Solution 3: Using single List
+    class Node{
+        int key;
+        int val;
+        Node(int k, int v){
+            this.key = k;
+            this.val = v;
+        }
+    }
+
+    List<Node> l = new ArrayList<>();
+    int size;
+    public LRUCache(int capacity) {
+        size = capacity;
+    }
+
+    public void print(List<Node> l){
+        for(int i = 0; i < l.size(); i++){
+            System.out.print("(" + l.get(i).key + ", " + l.get(i).val + ")");
+        }
+        System.out.println(" ");
+    }
+
+    public int findIndex(List<Node> l, int key){
+        for(int i = 0; i < l.size(); i++){
+            if(l.get(i).key == key){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int get(int key) {
+        // System.out.println("Get " + key);
+        // print(l);
+        int id = findIndex(l, key);
+        if(id != -1){
+            int val = l.get(id).val;
+            Node n = new Node(key, val);
+            l.remove(id);
+            l.add(n);
+            return val;
+        } else{
+            return -1;
+        }
+    }
+
+    public void put(int key, int value) {
+        // System.out.println("Put " + key + ", " + value);
+        // System.out.println("before: ");
+        // print(l);
+        int idx = findIndex(l, key);
+        Node n1 = new Node(key, value);
+        if(idx != -1){
+            l.remove(idx);
+            l.add(n1);
+        } else{
+            if(l.size() < size){
+                // Add directly
+                l.add(n1);
+            } else{
+                //remove the first one
+                l.remove(0);
+                l.add(n1);
+            }
+        }
+
+        // print(l);
     }
 }
