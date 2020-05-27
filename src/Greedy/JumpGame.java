@@ -35,10 +35,17 @@ public class JumpGame {
         return lastPos == 0;
     }
 
+    public boolean canJump2(int[] nums) {
+        int max = 0;
+        for (int i = 0; i < nums.length && i <= max; i++) {
+            max = Math.max(max, i + nums[i]);
+        }
+        return max >= nums.length - 1;
+    }
     /*
         Bottom-up DP
      */
-    public boolean canJump2(int[] nums) {
+    public boolean canJump3(int[] nums) {
         int[] memo = new int[nums.length];
         memo[nums.length - 1] = 1;
         for(int i = nums.length - 2; i >= 0; i--){
@@ -56,27 +63,24 @@ public class JumpGame {
     /*
         Top-Down DP
      */
-    public boolean canJump3(int[] nums) {
-        int[] memo = new int[nums.length];
-        memo[nums.length - 1] = 1;
-        return helper(nums, 0, memo);
+    public boolean canJump4(int[] nums) {
+        int[] dp = new int[nums.length]; // 0 for unknown, 1 for unreacheable, 2 for reacheable
+        dp[nums.length - 1] = 2;
+        return helper2(nums, 0, dp);
     }
 
-    public boolean helper(int[] nums, int pos, int[] memo){
-        if(memo[pos] != 0){
-            return memo[pos] == 1 ? true : false;
-        }
-        if(pos == nums.length - 1)
-            return true;
-        int newPos = Math.min(pos + nums[pos], nums.length - 1);
-        for (int i = newPos; i > pos; i--) {
-            if (helper(nums, i, memo)) {
-                memo[pos] = 1;
-                memo[i] = 1;
+    public boolean helper2(int[] nums, int start, int[] dp){
+        if(dp[start] == 2) return true;
+        else if(dp[start] == 1) return false;
+        int range = Math.min(nums[start] + start, nums.length - 1);
+        for(int i = start + 1; i <= range; i++){
+            if(helper2(nums, i, dp)){
+                dp[start] = 2;
                 return true;
             }
         }
-        memo[pos] = 2;
+        dp[start] = 1;
         return false;
+
     }
 }
