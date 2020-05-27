@@ -33,24 +33,23 @@ public class BinaryTreeMaximumPathSum {
       TreeNode right;
       TreeNode(int x) { val = x; }
     }
+    int max = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
-        int[] maxSum = {root.val};
-        findMax(root, maxSum);
-        return maxSum[0];
+        helper(root);
+        return max;
+
     }
 
-    // return path sum start from node root
-    public int findMax(TreeNode root, int[] maxSum){
-        if(root == null){
-            return 0;
-        }
+    public int helper(TreeNode root){
+        if(root == null) return 0;
+        int left = helper(root.left);
+        int right = helper(root.right);
+        int tmax = Integer.MIN_VALUE;
+        tmax = Math.max(tmax, left + root.val);
+        tmax = Math.max(tmax, right + root.val);
+        tmax = Math.max(tmax, root.val);
+        max = Math.max(Math.max(max, tmax), right + left + root.val);
+        return tmax;
 
-        int left = findMax(root.left, maxSum);
-        int right = findMax(root.right, maxSum);
-        maxSum[0] = Math.max(maxSum[0], root.val); // only root
-        maxSum[0] = Math.max(maxSum[0], root.val + left);  // root and left subtree
-        maxSum[0] = Math.max(maxSum[0], root.val + right); // root and right subtree
-        maxSum[0] = Math.max(maxSum[0], root.val + left + right); // root, left subtree, right subtree
-        return root.val + Math.max(0, Math.max(left, right));
     }
 }
