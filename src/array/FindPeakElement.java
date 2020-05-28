@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 /*
     A peak element is an element that is greater than its neighbors.
