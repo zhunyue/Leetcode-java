@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565f53c4-1ca3-4d4b-abc8-04b9048611cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BitManipulation/NumberComplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/String/RansomNote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/CombinationSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/CombinationSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/CombinationSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/CombinationSum3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/GenerateParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/LetterCombinationsofaPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/LetterCombinationsofaPhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/NQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/NQueen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/PalindromePartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/Permutation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Permutation2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/SubSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/SubSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/Subset2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Subset2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/WordSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +27,7 @@
     <session id="641768978">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="63" />
+          <entry key="project.closed" value="64" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
@@ -35,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="176" />
+          <entry key="java" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="176" />
+          <entry key="JAVA" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -100,11 +109,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/backtracking/CombinationSum2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -189,11 +207,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="59" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="826" />
+    <option name="height" value="833" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -228,7 +245,7 @@
     <property name="SearchEverywhereHistoryKey" value="Binary Tree Maximum Path Sum &#9;PSI&#9;JAVA://Tree.BinaryTreeMaximumPathSum&#10;Ju&#9;PSI&#9;JAVA://Greedy.JumpGame&#10;Longest Common Subsequence&#9;PSI&#9;JAVA://DP.LongestCommonSubsequence&#10;LR&#9;PSI&#9;JAVA://HashMap.LRUCache&#10;number of&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/NumberofIslands.java&#10;min stack&#9;PSI&#9;JAVA://Stack.MinStack&#10;middle&#9;PSI&#9;JAVA://LinkedList.ReorderList#getMiddle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590692923227" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590693139673" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -245,11 +262,11 @@
   </component>
   <component name="RunManager" selected="Application.test01">
     <configuration name="CombinationSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Backtracking.CombinationSum2" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.CombinationSum2" />
       <module name="Leetcode-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Backtracking.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,11 +288,11 @@
       </method>
     </configuration>
     <configuration name="GenerateParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Backtracking.GenerateParentheses" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.GenerateParentheses" />
       <module name="Leetcode-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Backtracking.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -387,16 +404,15 @@
       <workItem from="1590454535608" duration="466000" />
       <workItem from="1590545324792" duration="625000" />
       <workItem from="1590610251580" duration="1471000" />
-      <workItem from="1590692370192" duration="503000" />
+      <workItem from="1590692370192" duration="780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50822000" />
+    <option name="totallyTimeSpent" value="51099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -435,13 +451,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/InsertionSortList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DP/BestTimetoBuyandSellStockIV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -463,21 +472,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/FindPeakElement.java">
+    <entry file="file://$PROJECT_DIR$/src/array/FindPeakElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/FirstMissingPositive.java">
+    <entry file="file://$PROJECT_DIR$/src/array/FirstMissingPositive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/InsertInterval.java">
+    <entry file="file://$PROJECT_DIR$/src/array/InsertInterval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-411">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
@@ -614,7 +623,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/Array/ProductofArrayExceptSelf.java">
+    <entry file="file://$PROJECT_DIR$/src/array/ProductofArrayExceptSelf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
@@ -684,14 +693,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/SubarraySumsDivisiblebyK.java">
+    <entry file="file://$PROJECT_DIR$/src/array/SubarraySumsDivisiblebyK.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="43" column="47" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/SubarraySumEqualsK.java">
+    <entry file="file://$PROJECT_DIR$/src/array/SubarraySumEqualsK.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
@@ -772,8 +781,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backtracking/CombinationSum2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
