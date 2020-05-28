@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565f53c4-1ca3-4d4b-abc8-04b9048611cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/PossibleBipartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/JewelsandStones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/ContiguousArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/ContiguousArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/FractiontoRecurringDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/FractiontoRecurringDecimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/SubarraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/SubarraySumEqualsK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMap/WordPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtable/WordPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryTreeMaximumPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BitManipulation/NumberComplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/RansomNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,32 +26,32 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="13" />
-          <entry key="project.open.time.7" value="10" />
+          <entry key="project.open.time.7" value="11" />
           <entry key="project.open.time.8" value="22" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="63" />
+          <entry key="project.opened" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="173" />
+          <entry key="java" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="173" />
+          <entry key="JAVA" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="23567" />
+          <entry key="java" value="24015" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="23567" />
+          <entry key="JAVA" value="24015" />
         </counts>
       </usages-collector>
     </session>
@@ -67,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hashtable/JewelsandStones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="345">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DFS/PossibleBipartition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -84,6 +78,33 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/String/RansomNote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BitManipulation/NumberComplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -108,9 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Array/FindPeakElement.java" />
-        <option value="$PROJECT_DIR$/src/String/CompareVersionNumbers.java" />
-        <option value="$PROJECT_DIR$/src/Array/MaximalRectangle.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/LinkedListCycle2.java" />
         <option value="$PROJECT_DIR$/src/sort/MaximumGap.java" />
         <option value="$PROJECT_DIR$/src/Math/ExcelSheetColumnTitle.java" />
@@ -159,6 +177,9 @@
         <option value="$PROJECT_DIR$/src/Array/SubarraySumsDivisiblebyK.java" />
         <option value="$PROJECT_DIR$/src/hashtable/JewelsandStones.java" />
         <option value="$PROJECT_DIR$/src/DFS/PossibleBipartition.java" />
+        <option value="$PROJECT_DIR$/src/String/RansomNote.java" />
+        <option value="$PROJECT_DIR$/src/BitManipulation/NumberComplement.java" />
+        <option value="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" />
       </list>
     </option>
   </component>
@@ -168,7 +189,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="59" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -182,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,17 +216,11 @@
               <item name="Leetcode-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Leetcode-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Leetcode-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DFS" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -213,7 +228,7 @@
     <property name="SearchEverywhereHistoryKey" value="Binary Tree Maximum Path Sum &#9;PSI&#9;JAVA://Tree.BinaryTreeMaximumPathSum&#10;Ju&#9;PSI&#9;JAVA://Greedy.JumpGame&#10;Longest Common Subsequence&#9;PSI&#9;JAVA://DP.LongestCommonSubsequence&#10;LR&#9;PSI&#9;JAVA://HashMap.LRUCache&#10;number of&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/NumberofIslands.java&#10;min stack&#9;PSI&#9;JAVA://Stack.MinStack&#10;middle&#9;PSI&#9;JAVA://LinkedList.ReorderList#getMiddle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590620019311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590692873891" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -372,17 +387,18 @@
       <workItem from="1590454535608" duration="466000" />
       <workItem from="1590545324792" duration="625000" />
       <workItem from="1590610251580" duration="1471000" />
+      <workItem from="1590692370192" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50319000" />
+    <option name="totallyTimeSpent" value="50822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="23" width="1440" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30829757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,27 +435,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DP/WildcardMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="64" column="99" selection-start-line="64" selection-start-column="99" selection-end-line="64" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListCycle2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/SortList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/InsertionSortList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -743,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hashtable/JewelsandStones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="345">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -758,6 +753,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/RansomNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BitManipulation/NumberComplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
