@@ -1,57 +1,53 @@
 package Trie;
 
 public class Trie {
-        class TrieNode {
-            TrieNode[] children;
-            boolean isLeaf;
+    class TreeNode {
+        TreeNode[] children;
+        boolean isLeaf;
+        TreeNode(){
+            this.children = new TreeNode[26];
+            this.isLeaf = false;
+        }
+    }
+    TreeNode root;
+    /** Initialize your data structure here. */
+    public Trie() {
+        root = new TreeNode();
+    }
 
-            public TrieNode(){
-                children = new TrieNode[26];
+    /** Inserts a word into the trie. */
+    public void insert(String word) {
+        TreeNode t = root;
+        for(int i = 0; i < word.length(); i++){
+            int id = word.charAt(i) - 'a';
+            if(t.children[id] == null){
+                t.children[id] = new TreeNode();
             }
+            t = t.children[id];
         }
+        t.isLeaf = true;
+    }
 
-        private TrieNode root;
-        /** Initialize your data structure here. */
-        public Trie() {
-            root = new TrieNode();
+    /** Returns if the word is in the trie. */
+    public boolean search(String word) {
+        TreeNode t = root;
+        for(int i = 0; i < word.length(); i++){
+            int id = word.charAt(i) - 'a';
+            if(t.children[id] == null) return false;
+            t = t.children[id];
         }
+        return t.isLeaf;
+    }
 
-        /** Inserts a word into the trie. */
-        public void insert(String word) {
-            TrieNode tmp = root;
-            for(int i = 0; i < word.length(); i++){
-                int index = word.charAt(i) - 'a';
-                if(tmp.children[index] == null){
-                    tmp.children[index] = new TrieNode();
-                }
-                tmp = tmp.children[index];
-            }
-            tmp.isLeaf = true;
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    public boolean startsWith(String prefix) {
+        TreeNode t = root;
+        for(int i = 0; i < prefix.length(); i++){
+            int id = prefix.charAt(i) - 'a';
+            if(t.children[id] == null) return false;
+            t = t.children[id];
         }
-
-        /** Returns if the word is in the trie. */
-        public boolean search(String word) {
-            TrieNode node = searchWord(word);
-            return node != null && node.isLeaf;
-        }
-
-        public TrieNode searchWord(String word){
-            TrieNode tmp = root;
-            for(int i = 0; i < word.length(); i++){
-                int index = word.charAt(i) - 'a';
-                if(tmp.children[index] == null){
-                    return null;
-                } else{
-                    tmp = tmp.children[index];
-                }
-            }
-            return tmp;
-        }
-
-        /** Returns if there is any word in the trie that starts with the given prefix. */
-        public boolean startsWith(String prefix) {
-            TrieNode node = searchWord(prefix);
-            return node != null;
-        }
+        return true;
+    }
 }
 
