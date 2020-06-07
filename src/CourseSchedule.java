@@ -28,42 +28,35 @@ public class CourseSchedule {
         recursive: record the nodes which is visited in an recursion
      */
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        ArrayList[] graph = new ArrayList[numCourses];
-        int[] visited = new int[numCourses];
-        int[] recursive = new int[numCourses];
-
+        ArrayList[] arr = new ArrayList[numCourses];
+        int[] visited = new int[numCourses]; // 0 not visited; 1 cyclic; 2 non-cyclic
         for(int i = 0; i < numCourses; i++){
-            graph[i] = new ArrayList<Integer>();
+            arr[i] = new ArrayList<>();
         }
-
-        // Store the graph in an array
-        for(int[] course : prerequisites){
-            int parent = course[1];
-            int children = course[0];
-            graph[parent].add(children);
+        for(int i = 0; i < prerequisites.length; i++){
+            int[] pair = prerequisites[i];
+            arr[pair[1]].add(pair[0]);
         }
-
-        //Traverse each node to detect possible cycles
         for(int i = 0; i < numCourses; i++){
-            if(hasCycle(graph, visited, recursive, i))
+            if(hasCycle(i, arr, visited)){
                 return false;
+            }
         }
-
         return true;
     }
 
-    public boolean hasCycle(List<Integer>[] graph, int[] visited, int[] recursive, int index){
-        visited[index] = 1;
-        recursive[index] = 1;
-
-        for(int i = 0; i < graph[index].size(); i++){
-            int vertex = graph[index].get(i);
-            if((visited[vertex] == 0 && hasCycle(graph, visited, recursive, vertex)) || recursive[vertex] == 1){
+    private boolean hasCycle(int i, ArrayList[] arr, int[] visited){
+        if(visited[i] == 1) return true;
+        if(visited[i] == 2) return false;
+        ArrayList<Integer> list = arr[i];
+        visited[i] = 1;
+        for(int j = 0; j < list.size(); j++){
+            int id = list.get(j);
+            if(hasCycle(id, arr, visited)){
                 return true;
             }
         }
-
-        recursive[index] = 0;
+        visited[i] = 2;
         return false;
     }
 
