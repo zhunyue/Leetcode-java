@@ -30,55 +30,50 @@ public class DungeonGame {
         Top-down DP
      */
     public int calculateMinimumHP(int[][] dungeon) {
-        int m = dungeon.length;
-        int n = dungeon[0].length;
-        int[][] memo = new int[m][n];
-        return  helper(0,0,dungeon,memo);
+        int[][] dp = new int[dungeon.length][dungeon[0].length];
+        return helper(dungeon, 0, 0, dp);
     }
-    public int helper(int x, int y, int[][] dungeon, int[][] memo){
-        if(x == dungeon.length -1 && y == dungeon[0].length - 1){
-            return Math.max(1, 1 - dungeon[x][y]);
+
+    private int helper(int[][] d, int i, int j, int[][] dp){
+        int m = d.length;
+        int n = d[0].length;
+        if(i == m - 1 && j == n - 1){
+            return Math.max(1 - d[i][j], 1);
         }
-        int m = dungeon.length;
-        int n = dungeon[0].length;
-        if(x >= m || y >= n){
+        if(i >= m || j >= n){
             return Integer.MAX_VALUE;
         }
-        if(memo[x][y] > 0){
-            return memo[x][y];
+        if(dp[i][j] != 0){
+            return dp[i][j];
         }
-
-        int remain = dungeon[x][y] - Math.min(helper(x+1,y,dungeon,memo),helper(x,y+1,dungeon,memo));
-        if(remain >= 0){
-            remain = -1;
-        }
-        memo[x][y] = (-1)*remain;
-        return memo[x][y];
+        int needed = Math.min(helper(d, i, j+1, dp), helper(d, i+1, j, dp)) - d[i][j];
+        dp[i][j] = Math.max(needed, 1);
+        return dp[i][j];
     }
-
-    /*
-        Bottom-up DP
-     */
+    /*  Solution 2:  Bottom up DP
+        dp[i][j]: Minimum steps needed to keep all step after i, j has at least initial >= 1
+        dp[m-1][n-1]: if dungeon[m - 1][n - 1] > 1, then at least 1 to ensure alive before inde [m-1,n-1]; otherwise, we need  Math.abs(dungeon[m - 1][n - 1]) + 1
+        dp[m-1][j](not on boarder): it should make its right cell qualify  dp[i][j] ------> dungeon[i][j]  ------> at least dp[i][j+1]. Therefore, dp[i][j] + dungeon[i][j] == dp[i][j+1]. And we still ensure at least 1;
+        dp[i][n-1]: similar to dp[m-1][j];
+        dp[i][j](not on boarder): we choose the minimum of its left and top
+    */
     public int calculateMinimumHP2(int[][] dungeon) {
-        int m  = dungeon.length;
+        int m = dungeon.length;
         int n = dungeon[0].length;
         int[][] dp = new int[m][n];
-        dp[m-1][n-1] = (dungeon[m-1][n-1] > 0) ? 1 : 1 - dungeon[m-1][n-1];
-        for(int i = m-2; i >= 0; i--){
-            int remain = dungeon[i][n-1] - dp[i+1][n-1];
-            dp[i][n-1] = Math.max(1, (-1) * remain);
-        }
-
-        for(int i = n - 2; i >= 0; i--){
-            int remain = dungeon[m-1][i] - dp[m-1][i+1];
-            dp[m-1][i] = Math.max(1, (-1) * remain);
-        }
-
-        for(int i = m - 2; i >= 0; i--){
-            for(int j = n - 2; j >= 0; j--){
-                int right = Math.max(1, (-1) * (dungeon[i][j]  - dp[i][j+1]));
-                int down = Math.max(1, (-1) * (dungeon[i][j]  - dp[i+1][j]));
-                dp[i][j] = Math.min(right, down);
+        for(int i = m - 1; i >= 0; i--){
+            for(int j = n - 1; j >= 0; j--){
+                if(i == m - 1 && j == n - 1){
+                    dp[i][j] = Math.max(1, 1 - dungeon[i][j]);
+                } else if(i == m - 1){
+                    dp[i][j] = Math.max(dp[i][j + 1] - dungeon[i][j], 1);
+                } else if(j == n - 1){
+                    dp[i][j] = dp[i][n - 1] = Math.max(dp[i + 1][j] - dungeon[i][j], 1);
+                } else{
+                    int left = Math.max(dp[i][j+1] - dungeon[i][j], 1);
+                    int top = Math.max(dp[i+1][j] - dungeon[i][j], 1);
+                    dp[i][j] = Math.min(top, left);
+                }
             }
         }
         return dp[0][0];
