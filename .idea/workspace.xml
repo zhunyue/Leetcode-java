@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565f53c4-1ca3-4d4b-abc8-04b9048611cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/HIndexII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/LongestDuplicateSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/CountVowelsPermutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/PalindromePartitioningIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/RunningSumof1dArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearch/FindtheDuplicateNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS/ReconstructItinerary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/PerfectSquares.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/CountCompleteTreeNodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SumRoottoLeafNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP/DungeonGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/DungeonGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/UniquePaths.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,40 +21,40 @@
     <session id="641768978">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="78" />
+          <entry key="project.closed" value="80" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="17" />
-          <entry key="project.open.time.7" value="17" />
+          <entry key="project.open.time.6" value="18" />
+          <entry key="project.open.time.7" value="19" />
           <entry key="project.open.time.8" value="23" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="78" />
+          <entry key="project.opened" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="231" />
+          <entry key="java" value="238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="231" />
+          <entry key="JAVA" value="238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="35111" />
+          <entry key="java" value="35635" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="35111" />
+          <entry key="JAVA" value="35635" />
         </counts>
       </usages-collector>
     </session>
@@ -62,37 +62,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backtracking/PalindromePartitioning.java">
+        <entry file="file://$PROJECT_DIR$/src/BinarySearch/FindtheDuplicateNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="480">
+              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DP/PalindromePartitioningIII.java">
+        <entry file="file://$PROJECT_DIR$/src/Tree/SumRoottoLeafNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="134">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BinarySearch/LongestDuplicateSubstring.java">
+        <entry file="file://$PROJECT_DIR$/src/DP/PerfectSquares.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DFS/ReconstructItinerary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DP/DungeonGame.java">
+        <entry file="file://$PROJECT_DIR$/src/DP/UniquePaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            <state relative-caret-position="585">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -120,12 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Array/SubarraySumsDivisiblebyK.java" />
-        <option value="$PROJECT_DIR$/src/hashtable/JewelsandStones.java" />
-        <option value="$PROJECT_DIR$/src/DFS/PossibleBipartition.java" />
-        <option value="$PROJECT_DIR$/src/String/RansomNote.java" />
-        <option value="$PROJECT_DIR$/src/BitManipulation/NumberComplement.java" />
-        <option value="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" />
         <option value="$PROJECT_DIR$/src/Tree/CousinsinBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/array/MajorityElementSolution.java" />
         <option value="$PROJECT_DIR$/src/array/CheckIfItIsaStraightLine.java" />
@@ -171,6 +178,12 @@
         <option value="$PROJECT_DIR$/src/DP/PalindromePartitioningIII.java" />
         <option value="$PROJECT_DIR$/src/BinarySearch/LongestDuplicateSubstring.java" />
         <option value="$PROJECT_DIR$/src/DP/DungeonGame.java" />
+        <option value="$PROJECT_DIR$/src/Tree/CountCompleteTreeNodes.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearch/FindtheDuplicateNumber.java" />
+        <option value="$PROJECT_DIR$/src/Tree/SumRoottoLeafNumbers.java" />
+        <option value="$PROJECT_DIR$/src/DP/PerfectSquares.java" />
+        <option value="$PROJECT_DIR$/src/DFS/ReconstructItinerary.java" />
+        <option value="$PROJECT_DIR$/src/DP/UniquePaths.java" />
       </list>
     </option>
   </component>
@@ -180,7 +193,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="832" />
@@ -193,9 +206,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,19 +224,20 @@
               <item name="Leetcode-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
+              <item name="DFS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="dun&#9;PSI&#9;JAVA://DP.DungeonGame&#10;Palindrome Partitioning&#9;PSI&#9;JAVA://backtracking.PalindromePartitioning&#10;quicksort&#9;PSI&#9;JAVA://sort.sortExample#quickSort&#10;edit&#9;PSI&#9;JAVA://DP.EditDistance&#10;course&#9;PSI&#9;JAVA://CourseSchedule&#10;possible&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/PossibleBipartition.java&#10;LRU&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/hashtable/LRUCache.java&#10;trie&#9;PSI&#9;JAVA://Trie.Trie&#10;Binary Tree Maximum Path Sum &#9;PSI&#9;JAVA://Tree.BinaryTreeMaximumPathSum&#10;Ju&#9;PSI&#9;JAVA://Greedy.JumpGame&#10;Longest Common Subsequence&#9;PSI&#9;JAVA://DP.LongestCommonSubsequence&#10;LR&#9;PSI&#9;JAVA://HashMap.LRUCache&#10;number of&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/NumberofIslands.java&#10;min stack&#9;PSI&#9;JAVA://Stack.MinStack&#10;middle&#9;PSI&#9;JAVA://LinkedList.ReorderList#getMiddle" />
+    <property name="SearchEverywhereHistoryKey" value="Unique Paths&#9;PSI&#9;JAVA://DP.UniquePaths&#10;Unique Binary Search Trees&#9;PSI&#9;JAVA://DP.UniqueBinarySearchTrees&#10;dun&#9;PSI&#9;JAVA://DP.DungeonGame&#10;Palindrome Partitioning&#9;PSI&#9;JAVA://backtracking.PalindromePartitioning&#10;quicksort&#9;PSI&#9;JAVA://sort.sortExample#quickSort&#10;edit&#9;PSI&#9;JAVA://DP.EditDistance&#10;course&#9;PSI&#9;JAVA://CourseSchedule&#10;possible&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/PossibleBipartition.java&#10;LRU&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/hashtable/LRUCache.java&#10;trie&#9;PSI&#9;JAVA://Trie.Trie&#10;Binary Tree Maximum Path Sum &#9;PSI&#9;JAVA://Tree.BinaryTreeMaximumPathSum&#10;Ju&#9;PSI&#9;JAVA://Greedy.JumpGame&#10;Longest Common Subsequence&#9;PSI&#9;JAVA://DP.LongestCommonSubsequence&#10;LR&#9;PSI&#9;JAVA://HashMap.LRUCache&#10;number of&#9;FILE&#9;file:///Users/zhunyue/Documents/github/Leetcode-java/src/DFS/NumberofIslands.java&#10;min stack&#9;PSI&#9;JAVA://Stack.MinStack&#10;middle&#9;PSI&#9;JAVA://LinkedList.ReorderList#getMiddle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592878450159" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593472986252" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -402,17 +415,20 @@
       <workItem from="1592766275855" duration="1453000" />
       <workItem from="1592787948001" duration="1593000" />
       <workItem from="1592944482609" duration="69000" />
+      <workItem from="1592944630263" duration="48000" />
+      <workItem from="1592961016327" duration="86000" />
+      <workItem from="1593204920710" duration="1153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71722000" />
+    <option name="totallyTimeSpent" value="73009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37911302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3955651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -449,55 +465,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/backtracking/CombinationSum2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/CheckIfItIsaStraightLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/MajorityElementSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/CousinsinBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DFS/FloodFill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/FindtheTownJudge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="48" column="109" selection-start-line="48" selection-start-column="109" selection-end-line="48" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearch/ValidPerfectSquare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trie/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -824,15 +791,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearch/LongestDuplicateSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="345">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DP/DungeonGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="780">
           <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/CountCompleteTreeNodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP/UniqueBinarySearchTrees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearch/FindtheDuplicateNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/SumRoottoLeafNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP/PerfectSquares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DFS/ReconstructItinerary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP/UniquePaths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
