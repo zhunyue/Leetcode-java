@@ -70,7 +70,7 @@ public class PrisonCellsAfterNDays {
     public int[] prisonAfterNDays2(int[] cells, int N) {
         Set<String> seen = new HashSet<>();
         boolean cycle = false;
-        int len = 0;
+        int len = 0;sss=n
         for(int i = 0; i < N; i++){
             int[] next = update2(cells);
             String key = Arrays.toString(next);
