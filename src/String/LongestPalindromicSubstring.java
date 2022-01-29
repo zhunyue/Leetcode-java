@@ -14,66 +14,101 @@ Input: "cbbd"
 Output: "bb"
  */
 public class LongestPalindromicSubstring {
-    /*   Expand aound center
-            In fact, we could solve it in O(n^2)time using only constant space.
-            We observe that a palindrome mirrors around its center.
-            Therefore, a palindrome can be expanded from its center, and there are only 2n−1 such centers.
-            It is 2n-1 because we could expand from one single character or if the next character is the same, like "bb", we can also expand it.
-            !!!!! One thing to remember: do not return substring, return start and end position instead. (It will be faster)
+  /*
+    Solution 1:
+    Idea: Brute Force
+          We search for all substring and check if it is Palindrome.
+          How to check if Palindrome? We check all pairs a[0] a[n-1], a[1], a[n-2] and see if they are the same
 
-    */
-    public String longestPalindrome(String s) {
-        if (s == null || s.length() < 1) return "";
-        int left = 0;
-        int right = 0;
-        for(int i = 0; i< s.length(); i++){
-            int len1 = expand(s, i ,i);
-            int len2 = expand(s, i, i+1);
-            int len = Math.max(len1, len2);
-            if(len > right - left){
-                left = i - (len - 1) / 2;
-                right = i + len / 2;
+        *** TIME LIMIT EXCEED ***
+   */
+  public String longestPalindrome(String s) {
+      int maxLen = 0;
+      String maxStr = null;
+      for (int i = 0; i < s.length(); i++) {
+          for (int j = 0; j < s.length(); j++) {
+              if (isPalindrome(s, i, j)) {
+                  if (j - i + 1 > maxLen) {
+                      maxLen = j - i + 1;
+                      maxStr = s.substring(i, j+1);
+                  }
+              }
+          }
+      }
+      return maxStr;
+  }
+
+    private boolean isPalindrome(String str, int s, int e){
+        int len = e - s + 1;
+        for (int i = 0; i < len / 2; i++) {
+            if (str.charAt(s+i) != str.charAt(e-i)) {
+                return false;
             }
         }
-        return s.substring(left, right+1);
+        return true;
     }
 
-    public int expand(String s, int left, int right){
-        int L = left;
-        int R = right;
-        while(L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)){
-            L--;
-            R++;
-        }
-        return R-L-1;
+    /*
+      Solution 2:
+      Idea: DP solution. Let dp[i][j] represent if substring from i to j (included) is a Palindrome
+            dp[i][j] = true if dp[i+1][j-1] && s.charAt(i) == s.charAt(j)
+            dp[i][j] = false Otherwise
 
-    }
-    /*   DP
-             Consider the case "ababa".
-             If we already knew that "bab" is a palindrome, it is obvious that "ababa" must be a palindrome
-             since the two left and right end letters are the same.
-             There for we could have a 2-D array dp[][] where dp[i][j] represent if substring(i, j+1) is a palindrome string
-    */
+     */
     public String longestPalindrome2(String s) {
         boolean dp[][] = new boolean[s.length()][s.length()];
-        if(s.length() <= 0){
-            return "";
-        }
-        int maxLen = 0;
+        if (s.length() <= 0) return null;
         int left = 0;
         int right = 0;
-        for(int i = s.length() - 1; i >= 0; i--){
-            for(int j = i; j < s.length(); j++){
-                if(s.charAt(i) == s.charAt(j) && (j - i <= 2 || dp[i+1][j-1] == true)){
+        int maxLen = 0;
+        for (int j = 0; j < s.length(); j++) {
+            for (int i = 0; i <= j; i++) {
+                if (i == j) {
+                    dp[i][j] = true;
+                } else if (j == i + 1) {
+                    dp[i][j] = (s.charAt(i) == s.charAt(j));
+                } else if (s.charAt(i) == s.charAt(j) && dp[i + 1][j - 1]) {
                     dp[i][j] = true;
                 }
-                if(dp[i][j] && maxLen <= j - i + 1) {
+                if (dp[i][j] && maxLen < j - i + 1) {
                     maxLen = j - i + 1;
                     left = i;
                     right = j;
                 }
             }
         }
-        return s.substring(left, right+1);
+        return s.substring(left, right + 1);
     }
+
+    /*
+      Solution 3: Expand from center
+      Idea: For each character we expand from two center: s.charAt(i) and s.charAt(i), s.charAt(i+1). We try to expand as:
+            (xxxxx) s[i] (xxxxx) and (xxxxx) s[i], s[i+1] (xxxxx)
+     */
+    public String longestPalindrome3(String s) {
+        int maxLen = 0;
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int len1 = expandAroundCenter(s, i, i);
+            int len2 = expandAroundCenter(s, i, i + 1);
+            int len = Math.max(len1, len2);
+            if (len > maxLen) {
+                maxLen = len;
+                start = i - (len - 1) / 2;
+                end = i + len / 2;
+            }
+        }
+        return s.substring(start, end + 1);
+    }
+
+    private int expandAroundCenter(String s, int left, int right) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
+            left--;
+            right++;
+        }
+        // Here we minus exta 2 because in the final iteration of loop, if we are at boundary, we will still expand one time
+        return right - left - 1 - 2;
+    }
+
 }
